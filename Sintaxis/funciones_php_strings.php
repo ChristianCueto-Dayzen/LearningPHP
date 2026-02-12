@@ -20,7 +20,7 @@
     3.- str_replace — Replace all occurrences of the search string with the replacement string
     4.- str_split — Convert a string to an array
 
-    Más funciones: https://www.php.net/manual/en/function.join.php;
+    Más funciones: https://www.php.net/manual/en/ref.strings.php;
     */
 
 ?>
