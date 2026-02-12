@@ -2,7 +2,8 @@
     //print_r($_POST);
 
     if (empty($_POST['nombre'])){
-        header('Location: http://localhost/curso_php/Entregable1/');
+        header('Location: ./');
+        exit;
     } 
     $nombre=$_POST['nombre'];
 
