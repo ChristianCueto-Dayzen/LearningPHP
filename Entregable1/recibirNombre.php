@@ -1,13 +1,11 @@
 <?php
-
     //print_r($_POST);
 
-    if ($_POST){
-        $nombre=$_POST['nombre'];
+    if (empty($_POST['nombre'])){
+        header('Location: http://localhost/curso_php/Entregable1/');
+    } 
+    $nombre=$_POST['nombre'];
 
-        echo 'Hola ' . $nombre . ' Tus datos fueron recibidos y mostrados desde php';  
-    } else {
-        header('Location: http://localhost/curso%20php/Entregable1/');
-    }
+    echo 'Hola, ' . $nombre . '. Tus datos fueron recibidos y mostrados desde php';  
 
 ?>
