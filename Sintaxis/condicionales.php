@@ -38,7 +38,7 @@ if($mes == 'Diciembre'){
     echo 'Nada por celebrar';
 }
 */
-
+/* //usando boleanos
 $boleano = true;
 
 if ($boleano) {
@@ -46,5 +46,30 @@ if ($boleano) {
 } else {
     echo 'falso';
 }
+*/
+
+/* //Usando switch
+
+$mes = 'Febrero';
+
+switch( $mes ) {
+    case 'Enero':
+        echo 'feliz día';
+        break;
+    case 'Febrero':
+        echo 'No seas soldado caido el 14';
+        break;
+    default:
+        echo 'mes sin comentarios';
+        break;
+}
+*/ 
+//shortand if
+$edad=1;
+//isset($edad) -> devuelve true o false si la variable tiene contenido. (0 o 1)
+// ? indica si la condicion es para cuando se cumple la condicion
+// : para cuando no
+$edad = (isset($edad)) ? $edad : 'El usuario no estableció su edad';
+echo $edad;
 
 ?>
