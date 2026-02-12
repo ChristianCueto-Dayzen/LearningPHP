@@ -14,6 +14,7 @@
     $texto3 = strpos($text,'t'); //extraer la primera posición encontrada de la letra t
     echo $texto3.'<br />';
 
-    
+    echo 'Más funciones: https://www.php.net/manual/en/function.join.php';
+
 
 ?>
