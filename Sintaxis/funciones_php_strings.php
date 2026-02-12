@@ -14,7 +14,13 @@
     $texto3 = strpos($text,'t'); //extraer la primera posición encontrada de la letra t
     echo $texto3.'<br />';
 
-    echo 'Más funciones: https://www.php.net/manual/en/function.join.php';
+    /*Otras que podrías necesitar:
+    1.- str_contains — Determine if a string contains a given substring
+    2.- str_ends_with — Checks if a string ends with a given substring (Similar str_starts_with)
+    3.- str_replace — Replace all occurrences of the search string with the replacement string
+    4.- str_split — Convert a string to an array
 
+    Más funciones: https://www.php.net/manual/en/function.join.php;
+    */
 
 ?>
