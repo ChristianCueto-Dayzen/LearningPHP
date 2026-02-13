@@ -18,9 +18,10 @@ $productos = array(
 );
 $num_productos=count($productos);
 
-$productos_alf= sort($productos);
-$productos_rAlf= rsort($productos);
-
+if(!empty($_POST)){
+    $ordenado= $_POST['ordenar']=='A - Z' ? sort($productos) : rsort($productos);
+}
+>>>>>>> rama-botones
 
 ?>
 
@@ -31,6 +32,11 @@ $productos_rAlf= rsort($productos);
 </html>
 <body>
     <h1>Lista de productos</h1>
+    <label>Ordenar por: </label>
+    <form method="post" action="productos.php">
+        <input type="submit" id="alf" name="ordenar" value="A - Z">
+        <input type="submit" id="r_alf" name="ordenar" value = "Z - A">
+    </form>
     <ul>
         <?php 
             for( $i = 0; $i < $num_productos; $i++ ){
